@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-image: url(img/plage.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: 6vw; /* Taille adaptative */
+  background-color: rgba(
+    6,
+    236,
+    37,
+    0.3
+  ); /* Utilisation de RGBA pour transparence */
+  color: rgb(10, 10, 239);
+  padding: 20px;
+  text-align: center;
+}
+
+.img {
+  position: relative;
+  height: 70vh; /* Utilisation d'une hauteur relative à la fenêtre */
+  width: 90%; /* Largeur adaptative */
+  max-width: 3000px; /* Largeur maximale */
+  margin: auto;
+}
+
+#precedent,
+#suivant {
+  position: absolute;
+  font-size: 8vw; /* Taille adaptative */
+  top: 45%; /* Centré verticalement */
+  box-shadow: 10px 10px 15px 5px rgb(9, 147, 159);
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#precedent {
+  left: 10px;
+}
+
+#suivant {
+  right: 10px;
+}
+
+#precedent:hover,
+#suivant:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+.title {
+  margin-top: 20px;
+  box-shadow: 10px 10px 15px 5px rgb(0, 0, 0);
+  background-color: aqua;
+  font-size: 3vw; /* Taille adaptative */
+  padding: 10px;
+  text-align: center;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .h1 {
+    font-size: 8vw; /* Plus petit pour les tablettes */
+    padding: 15px;
+  }
+
+  .img {
+    height: 40vh; /* Plus petit sur les tablettes */
+  }
+
+  #precedent,
+  #suivant {
+    font-size: 10vw; /* Plus grand pour les écrans étroits */
+    top: 50%;
+  }
+
+  .title {
+    font-size: 4vw; /* Taille réduite */
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .h1 {
+    font-size: 10vw; /* Très petit pour les smartphones */
+    padding: 10px;
+  }
+
+  .img {
+    height: 65vh;
+  }
+
+  #precedent,
+  #suivant {
+    font-size: 12vw; /* Boutons encore plus grands */
+    top: 55%;
+  }
+
+  .title {
+    font-size: 5vw;
+  }
+}
