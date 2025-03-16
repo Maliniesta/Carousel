@@ -5,31 +5,31 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  background-image: url(img/plage.jpg);
-  background-size: cover;
-  background-position: center;
+ background-color: rgb(33, 112, 202);
+ height: 100vh;
 }
 
-.h1 {
+.banner{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  margin: 0;
-  font-size: 6vw; /* Taille adaptative */
-  background-color: rgba(
-    6,
-    236,
-    37,
-    0.3
-  ); /* Utilisation de RGBA pour transparence */
-  color: rgb(10, 10, 239);
-  padding: 20px;
-  text-align: center;
+}
+
+h1{
+  box-shadow: 10px 10px 15px 5px rgb(0, 0, 0);
+  background-color: aqua;
+  font-size: 30px;
+  padding: 2rem;
+}
+
+.logo{
+  width: 100px;
+  height: 100px;
 }
 
 .img {
   position: relative;
-  height: 70vh; /* Utilisation d'une hauteur relative à la fenêtre */
+  height: 75vh; /* Utilisation d'une hauteur relative à la fenêtre */
   width: 90%; /* Largeur adaptative */
   max-width: 3000px; /* Largeur maximale */
   margin: auto;
@@ -63,14 +63,7 @@ body {
   transition: transform 0.3s ease;
 }
 
-.title {
-  margin-top: 20px;
-  box-shadow: 10px 10px 15px 5px rgb(0, 0, 0);
-  background-color: aqua;
-  font-size: 3vw; /* Taille adaptative */
-  padding: 10px;
-  text-align: center;
-}
+
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
