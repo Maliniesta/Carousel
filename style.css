@@ -100,7 +100,7 @@ h1{
 
   #precedent,
   #suivant {
-    font-size: 12vw; /* Boutons encore plus grands */
+    font-size: 25px; /* Boutons encore plus grands */
     top: 55%;
   }
 
