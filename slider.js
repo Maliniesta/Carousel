@@ -2,7 +2,7 @@ const slide = [
   "villa1.jpg",
   "villa2.jpg",
   "villa3.jpg",
-  "villa4.jpeg",
+  "villa4.jpg",
   "villa5.jpg",
   "villa6.jpg",
   "villa7.jpg",
